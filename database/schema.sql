@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS traffic_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    lane TEXT NOT NULL,
+    vehicles INTEGER NOT NULL,
+    ambulance TEXT NOT NULL,
+    density TEXT NOT NULL,
+    green_time INTEGER NOT NULL,
+    recorded_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
